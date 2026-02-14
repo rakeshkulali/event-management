@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - TechEvents Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-calendar-alt"></i>
+                <h1>TechEvents<span>Hub</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="events.html" class="active"><i class="fas fa-calendar"></i> Events</a></li>
+                <li><a href="create-event.html"><i class="fas fa-plus-circle"></i> Create</a></li>
+                <li><a href="registrations.html"><i class="fas fa-users"></i> Registrations</a></li>
+                <li><a href="dashboard.html"><i class="fas fa-chart-bar"></i> Dashboard</a></li>
+                <li><a href="login.html" class="btn-login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>All Events</h1>
+            <a href="create-event.html" class="btn btn-primary">
+                <i class="fas fa-plus-circle"></i> Create New Event
+            </a>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search events...">
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="coding">Coding</option>
+                <option value="gaming">Gaming</option>
+                <option value="communication">Communication</option>
+                <option value="cyber_security">Cyber Security</option>
+            </select>
+        </div>
+
+        <!-- Events Grid -->
+        <div class="events-grid" id="eventsContainer">
+            <!-- Events will be loaded here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
